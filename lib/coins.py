@@ -1722,3 +1722,10 @@ class Xuez(Coin):
                 'nonce': nonce,
                 'nAccumulatorCheckpoint': hash_to_str(header[80:112]),
             }
+
+class BitcoinCore(BitcoinMixin, Coin):
+    NAME = "BitcoinCore"
+    SHORTNAME = "BTCC"
+    TX_COUNT = 243631085
+    TX_COUNT_HEIGHT = 126946
+    TX_PER_BLOCK = 2
